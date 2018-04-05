@@ -1,0 +1,207 @@
+
+    <!-- FontAwesome 4.3.0 -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- bootstrap wysihtml5 - text editor -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/radar.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/xy.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+  <div class="skin-black">
+    <div class="wrapper">
+      <!-- Right side column. Contains the navbar and content of the page -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1> Sustentabilidad <small>Panel de control</small></h1>
+          <ol class="breadcrumb">
+            <li class="active"><a target= "blanc" href="https://personalityinsights-8b.mybluemix.net/?source=myself"></i> Mi personalidad</a></li>
+          </ol>
+        </section>
+        <!-- Main content -->
+        <section class="content">
+          <!-- Small boxes (Stat box) -->
+          <div class="row">
+            <div class="col-lg-3 col-xs-6">
+
+              <!-- small box -->
+              <div class="small-box bg-yellow">
+                <div class="inner">
+                  <h3>70<sup style="font-size: 20px">%</h3>
+                  <p style="color: white" >Solar</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-bag"></i>
+                </div>
+              </div>
+            </div>
+            <!-- ./col -->
+
+            <div class="col-lg-3 col-xs-6">
+
+              <!-- small box -->
+              <div class="small-box bg-green">
+                <div class="inner">
+                  <h3>53<sup style="font-size: 20px">%</sup></h3>
+                  <p style="color: white">Gases</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-leaf"></i>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+
+              <!-- small box -->
+              <div class="small-box bg-aqua">
+                <div class="inner">
+                  <h3>44<sup style="font-size: 20px">%</h3>
+                  <p style="color: white" >Agua</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-ios-people "></i>
+                </div>
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+
+              <!-- small box -->
+              <div class="small-box bg-red">
+                <div class="inner">
+                  <h3>65<sup style="font-size: 20px">%</h3>
+                  <p style="color: white"  >Mis resultados</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-pie-graph"></i>
+                </div>
+              </div>
+            </div><!-- ./col -->
+          </div><!-- /.row -->
+          <!-- Main row -->
+          <div class="row">
+            <!-- Left col -->
+            <section class="col-lg-7 connectedSortable">
+              <!-- Custom tabs (Charts with tabs)-->
+              <div class="nav-tabs-custom">
+                                <!-- tools box -->
+                  <div class="box-tools pull-right">
+                    <button class="btn bg-teal btn-sm" id="esconderIndicador" ><i class="fa fa-minus"></i></button>
+                    <button class="btn bg-teal btn-sm" id="mostrarIndicador" ><i class="fa fa-window-restore"></i></button>
+                  </div>
+                <!-- Tabs within a box -->
+                <ul class="nav nav-tabs pull-right">
+                  <li class="active"><a href="#revenue-chart" data-toggle="tab">Huerto</a></li>
+                  <li class="pull-left header"><i class="fa fa-inbox"></i>Mi resultado</li>
+                </ul>
+                <div class="tab-content no-padding">
+                  <!-- Chart -->
+
+<div id="chartdiv1" class="chartdiv">Si no se ve contenido recargar pagina</div>		
+                </div>
+              </div><!-- /.nav-tabs-custom --> 
+
+              <!-- Custom tabs (Charts with tabs)-->
+              <div class="nav-tabs-custom">
+                                <!-- tools box -->
+                  <div class="box-tools pull-right">
+                    <button class="btn bg-teal btn-sm" id="esconderIndicadorEsperado" ><i class="fa fa-minus"></i></button>
+                    <button class="btn bg-teal btn-sm" id="mostrarIndicadorEsperado" ><i class="fa fa-window-restore"></i></button>
+                  </div>
+                <!-- Tabs within a box -->
+                <ul class="nav nav-tabs pull-right">
+                  <li class="active"><a href="#revenue-chart" data-toggle="tab">Casa</a></li>
+                  <li class="pull-left header"><i class="fa fa-inbox"></i>Resultado esperado</li>
+                </ul>
+                <div class="tab-content no-padding">
+                  <!-- Chart -->
+
+<div id="IndicadorEsperado" class="IndicadorEsperado">Si no se ve contenido recargar pagina</div>   
+                </div>
+              </div><!-- /.nav-tabs-custom --> 
+            </section><!-- /.Left col -->
+
+
+
+            <!-- right col (We are only adding the ID to make the widgets sortable)-->
+            <section class="col-lg-5 connectedSortable">
+
+              <!-- Map box -->
+              <div class="box box-solid bg-light-blue-gradient">
+                <div class="box-header">
+                  <!-- tools box -->
+                  <div class="box-tools pull-right">
+                    <button class="btn bg-teal btn-sm" id="hide" ><i class="fa fa-minus"></i></button>
+                    <button class="btn bg-teal btn-sm" id="mostrar" ><i class="fa fa-window-restore"></i></button>
+                  </div>
+                  <i class="fa fa-map-marker"></i>
+                  <h3 class="box-title">Zona Geográfica</h3>
+                </div>
+                <div class="box-body">
+                  <div id="map">Si no se ve contenido recargar pagina</div>
+
+      <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+
+
+    </script>
+
+
+
+                </div><!-- /.box-body-->
+
+              </div>
+              <!-- /.box -->
+
+              <!-- solid sales graph -->
+              <div class="box box-solid bg-teal-gradient">
+                <div class="box-header">
+                  <i class="fa fa-th"></i>
+                  <h3 class="box-title">Indicadores en el tiempo</h3>
+                  <!-- tools box -->
+                  <div class="box-tools pull-right">
+                    <button class="btn bg-teal btn-sm" id="escondeGrafica" ><i class="fa fa-minus"></i></button>
+                    <button class="btn bg-teal btn-sm" id="mostrarGrafica" ><i class="fa fa-window-restore"></i></button>
+                  </div>
+
+                </div>
+                <div class="box-body border-radius-none">
+<div id="chartdiv" class="chartdiv">Si no se ve contenido recargar pagina</div>									
+                </div><!-- /.box-body -->
+
+              </div><!-- /.box -->
+
+
+                      </div>
+                    </div><!-- /.col -->
+                  </div><!-- /.row -->
+                </div>
+              </div><!-- /.box -->
+
+            </section><!-- right col -->
+          </div><!-- /.row (main row) -->
+
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+
+
+
+
+  </div>
+    <script async defer
+    src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCjf2V5EWt8KNiIOPlcEdRzHufANKnDGaI&callback=initMap'>
+    </script>
